@@ -71,7 +71,7 @@ foreach ($user in $users)
     if (($daystoexpire -ge "0") -and ($daystoexpire -lt $expireindays))
     {
     # Send Email Message
-        Send-Mailmessage -smtpServer $smtpServer -from $from -to $manager -cc itteam@kinseysinc.com -subject $subject -body $body -bodyasHTML -priority High  
+        Send-Mailmessage -smtpServer $smtpServer -from $from -to $manager -cc it@yourcompany.com -subject $subject -body $body -bodyasHTML -priority High  
 
     } # End Send Message
     
