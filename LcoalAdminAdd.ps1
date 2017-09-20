@@ -1,5 +1,3 @@
-#Load Module
-Import-Module ActiveDirectory
 #Variables
 $DomainName = Read-Host "Domain name:"
 $ComputerName = Read-Host "Computer name:"
