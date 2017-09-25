@@ -1,17 +1,4 @@
 # ==============================================================================================
-# 
-# Microsoft PowerShell Source File -- Created with SAPIEN Technologies PrimalScript 2007
-# 
-# NAME: Server/Workstation Inventory (CompInv_v2.ps1)
-# 
-# AUTHOR: Jesse Hamrick
-# DATE  : 2/25/2009
-# Web	: www.PowerShellPro.com
-# COMMENT: Script Inventories Computers and sends results to an excel file.
-# 
-# ==============================================================================================
-
-# ==============================================================================================
 # Functions Section
 # ==============================================================================================
 # Function Name 'WMILookup' - Gathers info using WMI and places results in Excel
