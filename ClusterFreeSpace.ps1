@@ -6,7 +6,7 @@ $objs = @()
 $csvs = Get-ClusterSharedVolume
 foreach ( $csv in $csvs )
 {
-   $csvinfos = $csv | select -Property Name -ExpandProperty SharedVolumeInfo
+   $csvinfos = $csv | Select-Object -Property Name -ExpandProperty SharedVolumeInfo
    foreach ( $csvinfo in $csvinfos )
    {
       $obj = New-Object PSObject -Property @{
@@ -21,4 +21,4 @@ foreach ( $csv in $csvs )
    }
 }
 
-$objs | ft -auto Name,Path,@{ Label = "Size(GB)" ; Expression = { "{0:N2}" -f ($_.Size/1024/1024/1024) } },@{ Label = "FreeSpace(GB)" ; Expression = { "{0:N2}" -f ($_.FreeSpace/1024/1024/1024) } },@{ Label = "UsedSpace(GB)" ; Expression = { "{0:N2}" -f ($_.UsedSpace/1024/1024/1024) } },@{ Label = "PercentFree" ; Expression = { "{0:N2}" -f ($_.PercentFree) } }
+$objs | Format-Table -auto Name,Path,@{ Label = "Size(GB)" ; Expression = { "{0:N2}" -f ($_.Size/1024/1024/1024) } },@{ Label = "FreeSpace(GB)" ; Expression = { "{0:N2}" -f ($_.FreeSpace/1024/1024/1024) } },@{ Label = "UsedSpace(GB)" ; Expression = { "{0:N2}" -f ($_.UsedSpace/1024/1024/1024) } },@{ Label = "PercentFree" ; Expression = { "{0:N2}" -f ($_.PercentFree) } }

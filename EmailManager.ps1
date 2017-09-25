@@ -5,7 +5,7 @@
 $smtpServer="exchange"
 $expireindays = 3
 $from = "Admin <admin@yourcompany.com>"
-#This script emails a manager that a direct report has an expiring password and has ignored requests to change the apssword. 
+#This script emails a manager that a direct report has an expiring password and has ignored requests to change the password. 
 #
 ###################################################################################################################
 
