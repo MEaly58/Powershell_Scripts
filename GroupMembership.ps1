@@ -1,5 +1,7 @@
 #Load AD Module
-Import-
-#Request User
+Import-Module ActiveDirectory
+#Varibles
 $Name = Read-Host "Account to look up?"
-Get-ADPrincipalGroupMembership username | select $Name
+$File = "C:\Groupsfor$Name.txt"
+#Run script
+Get-ADPrincipalGroupMembership username | select $Name | Out-file $File 
