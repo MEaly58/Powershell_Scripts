@@ -6,4 +6,3 @@ $x.ExternalMessage | Out-File oof.txt
 #edit the HTML in the exported oof.txt file, and then run the following commands to import it:
 $oof = Get-Content oof.txt
 Set-MailboxAutoReplyConfiguration user -ExternalMessage $oof
-
