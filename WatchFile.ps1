@@ -1,6 +1,12 @@
-##We setup a witness file at the root of our main share with its twin in a read-only area for reference. On start we make sure both files are identical. We setup a watcher routine using System.IO.FileSystemWatcher to trigger an event on a modification in our root file share. We make sure both are not identical, we kill the LanmanServer service and send out an email warning.
-##powershell.exe  -command C:\Support\watchfile.ps1 -ExecutionPolicy Bypass
-
+<#
+We setup a witness file at the root of our main share with its twin in a read-only area for reference. 
+On start we make sure both files are identical. 
+We setup a watcher routine using System.IO.FileSystemWatcher to trigger an event on a modification in our root file share. 
+We make sure both are not identical, we kill the LanmanServer service and send out an email warning.
+#########
+Schedule task set up
+    powershell.exe  -command C:\Support\watchfile.ps1 -ExecutionPolicy Bypass
+#>
 
 ## Variables
 $ErrorActionPreference = "Stop"
