@@ -1,4 +1,4 @@
-#Hits the sapce bar to keepthe ssytem awake
+#Hits the sapce bar to keep the system awake
 param($minutes = 60)
 
 $myShell = New-Object -com "Wscript.Shell"
