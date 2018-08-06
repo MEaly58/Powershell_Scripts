@@ -1,3 +1,15 @@
+<#!
+.SYNOPSIS
+	Gather information Network computers export to excel
+.DESCRIPTION
+	This script will pull data on AD computers and place data in sheets. 
+.NOTES
+	File Name: ADInventory.ps1
+	Author: Mathew Ealy
+	Requires Powershell 2.0
+.LINK
+	https://github.com/MEaly58
+#>
 # ==============================================================================================
 # Functions Section
 # ==============================================================================================
