@@ -28,7 +28,7 @@ $body = "Please find attached Nas error log report"
 #>
 
 #Script
-Get-EventLog -Log $Log -EntryType $Level -Message $Message -After (Get-Date).AddHours(-24) | Converto-CSV #| Out-File $File
+Get-EventLog -Log $Log -EntryType $Level -Message $Message -After (Get-Date).AddHours(-24) | ConvertTo-CSV #| Out-File $File
 
 #Email File
 #Uncomment below sections to email file
