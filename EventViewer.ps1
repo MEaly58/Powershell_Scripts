@@ -16,7 +16,7 @@ $Log = "Application"
 $Level = "Error"
 $Message = "*message*"
 #uncomment to save file for review or email
-#$File = "C:\$HostName-Application-Error.csv"
+#$File = "C:\Application-Error.csv"
 #Uncomment below sections to email file
 <#!
 $smtpServer="exchange"
